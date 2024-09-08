@@ -41,4 +41,10 @@ Exit to exit the shell
 exit
 ```
 
+More info 
+	`https://www.jetify.com/devbox/docs/installing_devbox/`
+
+ZSH plugins
+	`https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df`
+
 
