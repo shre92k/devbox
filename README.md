@@ -1,15 +1,12 @@
 # devbox
 
 ## Install devbox.
-### Linux
+### Linux / MacOS
 ```
 curl -fsSL https://get.jetify.com/devbox | bash
 ```
 
-### MacOS
-```
-curl -fsSL https://get.jetify.com/devbox | bash
-```
+
 
 Now Clone the repo and cd into it
 
