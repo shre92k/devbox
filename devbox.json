@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
+  "packages": [
+    "zsh@latest",
+    "locale@latest",
+    "which@latest",
+    "curl@latest",
+    "git@latest",
+    "vim@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null",
+      "export HOME=$DEVBOX_PROJECT_ROOT",
+      "touch $HOME/.zshrc",
+      "export CHSH=no",
+      "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"",
+      "exec zsh"  
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
