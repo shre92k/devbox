@@ -39,9 +39,7 @@ exit
 ```
 
 More info 
-	`https://www.jetify.com/devbox/docs/installing_devbox/`
-
-ZSH plugins
-	`https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df`
+ - [devbox](https://www.jetify.com/devbox/docs/installing_devbox/)  `https://www.jetify.com/devbox/docs/installing_devbox/`
+ - [zsh_plugins](https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df)    `https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df`
 
 
