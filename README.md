@@ -27,10 +27,18 @@ exit
 Enter the shell once again
 ```
 devbox shell --pure
+```
+Once inside the shell
+```
 export ZSH_CUSTOM
 sh install_zsh_plugins.sh
 source .zshrc
 ```
 You self contained shell is ready.
+Exit to exit the shell
+
+```
+exit
+```
 
 
