@@ -1,0 +1,8 @@
+.zcompdump*
+.zsh_history
+.zshrc.pre*
+devbox.lock
+.viminfo
+.oh-my-zsh
+.zshrc
+.DS_Store
