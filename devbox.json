@@ -6,7 +6,12 @@
     "which@latest",
     "curl@latest",
     "git@latest",
-    "vim@latest"
+    "vim@latest",
+    "bat@latest",
+    "vscode@1.95.2",
+    "jdk@23.0.1+11",
+    "binutils@2.43.1",
+    "gradle@8.10.2"
   ],
   "shell": {
     "init_hook": [

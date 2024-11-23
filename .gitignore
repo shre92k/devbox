@@ -6,3 +6,7 @@ devbox.lock
 .oh-my-zsh
 .zshrc
 .DS_Store
+.cache
+.local
+.nix-profile
+.vscode
