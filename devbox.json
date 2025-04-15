@@ -8,7 +8,10 @@
     "git@latest",
     "vim@latest",
     "vscode@1.98.2",
-    "openssh@latest"
+    "openssh@latest",
+    "gradle@8.12.1",
+    "jdk@23.0.2+7",
+    "less@latest"
   ],
   "shell": {
     "init_hook": [
