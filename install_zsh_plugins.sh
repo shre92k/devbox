@@ -49,4 +49,15 @@ else
     git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
     sed -i '/plugins=(.*)/ s/)$/ zsh-autocomplete)/'  $HOME/.zshrc
 fi
+
+FOLDER=$ZSH_CUSTOM/plugins/gradle-completion
+if [ -d $FOLDER ]; then
+    echo "File $FOLDER exists."
+else
+    echo "Folder $FOLDER does not exist."
+    git clone --depth 1 -- https://github.com/gradle/gradle-completion $ZSH_CUSTOM/plugins/gradle-completion
+    sed -i '/plugins=(.*)/ s/)$/ gradle-completion)/'  $HOME/.zshrc
+fi
+
+# git clone https://github.com/gradle/gradle-completion ~/.oh-my-zsh/plugins/gradle-completion
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
