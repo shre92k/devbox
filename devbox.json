@@ -17,6 +17,7 @@
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null",
       "export HOME=$DEVBOX_PROJECT_ROOT",
+      "export GRADLE_USER_HOME=$DEVBOX_PROJECT_ROOT/.gradle",
       "touch $HOME/.zshrc",
       "export CHSH=no",
       "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"",
