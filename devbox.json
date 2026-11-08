@@ -1,25 +1,26 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.18.3/.schema/devbox.schema.json",
   "packages": [
     "zsh@latest",
-    "locale@latest",
+    "coreutils@latest",
     "which@latest",
     "curl@latest",
     "git@latest",
-    "vim@latest"
+    "vim@latest",
+    "zsh-autosuggestions@0.7.1",
+    "zsh-syntax-highlighting@0.8.0",
+    "locale@latest",
+    "zsh-autocomplete@26.08.04",
+    "oh-my-zsh@2026-08-16"
   ],
+  "env": {
+    "XDG_CACHE_HOME": "$DEVBOX_PROJECT_ROOT/.cache"
+  },
   "shell": {
     "init_hook": [
-      "set -e",
       "export HOME=\"$DEVBOX_PROJECT_ROOT\"",
-      "export ZSH=\"$HOME/.oh-my-zsh\"",
-      "export ZSH_CUSTOM=\"$ZSH/custom\"",
-      "if [ ! -d \"$ZSH\" ]; then",
-      "  installer=$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)",
-      "  sh -c \"$installer\" -- --unattended",
-      "fi",
-      "sh \"$DEVBOX_PROJECT_ROOT/install_zsh_plugins.sh\"",
-      "exec zsh"
+      "export ZDOTDIR=\"$HOME/.zsh\"",
+      "case $- in *i*) export SHELL=\"$DEVBOX_PACKAGES_DIR/bin/zsh\"; exec \"$SHELL\" -i ;; esac"
     ]
   }
 }
