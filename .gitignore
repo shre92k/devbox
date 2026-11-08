@@ -1,0 +1,16 @@
+# Devbox and local runtime state
+.devbox/
+.cache/
+.local/
+devbox.lock
+
+# Shell history and generated completion caches (including older locations)
+.zsh/.zsh_history
+.zsh/.zcompdump*
+.zsh/.zshrc.zwc
+
+# Local environment and macOS metadata
+.env
+.env.*
+!.env.example
+.DS_Store

@@ -9,18 +9,24 @@
     "vim@latest",
     "zsh-autosuggestions@0.7.1",
     "zsh-syntax-highlighting@0.8.0",
-    "locale@latest",
     "zsh-autocomplete@26.08.04",
-    "oh-my-zsh@2026-08-16"
+    "oh-my-zsh@2026-08-16",
+    "locale@latest",
+    "less@latest"
   ],
   "env": {
-    "XDG_CACHE_HOME": "$DEVBOX_PROJECT_ROOT/.cache"
+    "XDG_CACHE_HOME": "$DEVBOX_PROJECT_ROOT/.cache",
+    "ZDOTDIR":        "$DEVBOX_PROJECT_ROOT/.zsh",
+    "XDG_DATA_HOME":  "$DEVBOX_PROJECT_ROOT/.local/share",
+    "XDG_STATE_HOME": "$DEVBOX_PROJECT_ROOT/.local/state"
   },
   "shell": {
     "init_hook": [
       "export HOME=\"$DEVBOX_PROJECT_ROOT\"",
-      "export ZDOTDIR=\"$HOME/.zsh\"",
       "case $- in *i*) export SHELL=\"$DEVBOX_PACKAGES_DIR/bin/zsh\"; exec \"$SHELL\" -i ;; esac"
-    ]
+    ],
+    "scripts": {
+      "check": "zsh -n \"$DEVBOX_PROJECT_ROOT/.zsh/.zshrc\""
+    }
   }
 }
